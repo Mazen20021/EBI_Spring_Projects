@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff6f61, #d3aeb8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            color: #fff;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            text-align: center;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+            border-radius: 15px;
+            z-index: -1;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #fff;
+            text-align: left;
+            position: relative;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 0;
+            border: none;
+            border-radius: 10px;
+            background: #333;
+            color: #fff;
+            font-size: 16px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background: linear-gradient(135deg, #ff5722, #e91e63);
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #e91e63, #ff5722);
+            transform: translateY(-3px);
+        }
+        .forgot-password {
+            margin-top: 15px;
+            color: #ffeb3b;
+        }
+        .forgot-password a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .forgot-password a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Login</h1>
+    <form action="/Gradle___org_example___Test2025_1_0_SNAPSHOT_war/hello-servlet" method="get">
+        <label for="email">Email
+            <input id="email" name="email" type="email" required>
+        </label>
+        <label for="pass">Password
+            <input id="pass" name="pass" type="password" required>
+        </label>
+        <button type="submit">Login</button>
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
